@@ -1,0 +1,85 @@
+/* SELECTORES */
+
+/* 
+Selectores Simples
+    Selectores elementales
+        
+        Selector Universal seria solo un *
+        Selector de tipo o etiqueta seria poner nombre de la etiqueta
+    
+        selectores de atriuto (el que mas se utiliza)
+            
+            id = id del elemento
+            clase = clse delelemento
+            otros atributos
+
+
+*/
+
+/* Selector univerdal selecciona todo */
+
+/* *{
+    background-color: blueviolet;
+} */
+
+/* Selector de etiqueta seleccionar solo la etiqueta que tengamos puesto en nuestro html se utuliza para normalizar o resetar estilos */
+
+/* h1{
+    background-color: aqua;
+}
+
+p{
+    background-color: coral;
+}
+
+ul{
+    background-color: aqua;
+}
+
+li{
+    background-color: red;
+} */
+
+
+
+/* Por id no dar estilo nunca pero es poner */
+
+/* POr clase es el mas recomendable y se pone un punto mas el nombre que hayamos puesto de la clase  y no hay limite para poner clases*/
+
+.titulo{
+    background-color: crimson;
+}
+
+.texto{
+    background-color: lightgreen;
+}
+
+/* Se puede utilizar un selector de atributo que va dentro de []  */
+
+[href]{
+    background-color: aquamarine;
+}
+
+/* o un selector d atributo mas su valar va dentro de [ y el valor entr""] */
+
+[href="https://3djuegos.com"]{
+    background-color: darkgoldenrod;
+}
+
+/* para seleccionar un atributo por el primer nombre de su valor seria con ^ */
+
+[href^="htpps"]{
+
+}
+
+/* para seleccionar un atributo por cualquier nombre que contenga su valor  seria con *  */
+
+[href*="3d"]{
+
+}
+
+/* para seleccionar un atributo por el ultimo nombre de su valor seria con $ */
+
+[href$=".com"]{
+    
+}

@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+.li{
+    display: flex;
+    margin-right: 20px;
+}
+nav{
+    background-color: blue;
+    text-align: center;
+    height: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid grey;
+    padding-right:70px;
+    padding-left: 35px;
+    line-height:30px;
+    width: 30px;
+    display: inline-block;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    background-image: url(img/final.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.texto{
+    color:white;
+    width: 500px;
+    margin-left: 30px;
+}
+h1{
+    color: crimson;
+}
+.texto p{
+background-color: rgba(0, 0, 0, 0.341);
+text-align: justify;
+}
+.articulos{
+    margin-right: 10PX;
+   text-align: center;
+    width: 500px;
+    color: white;
+}
+.art1, .art2, .art3, .art4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    
+}
+.img1,.img2, .img3, .img4{
+    margin-right: 20px;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+footer div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div:last-child{
+    margin-top: 30px;
+    
+}
+footer div img{
+    margin-right: 15px;
+}
+

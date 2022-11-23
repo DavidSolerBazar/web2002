@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    background: linear-gradient(
+    90deg,
+    rgba(26, 35, 46, 1) 0%,
+    rgba(25, 36, 46, 1) 29%,
+    rgba(26, 35, 46, 1) 100%
+    )
+}
+header{
+    background: linear-gradient(
+    90deg,
+    rgba(26, 35, 46, 1) 0%,
+    rgba(25, 36, 46, 1) 29%,
+    rgba(35, 52, 68, 1) 66%,
+    rgba(26, 35, 46, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+}
+header img{
+    height: 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 600px;
+    margin-left: 200px;
+}
+nav div{
+    margin: 25px;
+    cursor: pointer;
+}
+input{
+    margin-right: 100px;
+    margin-left: -620px;
+    height: 25px;
+    border-radius: 10px;
+    border:0.5px solid crimson;
+    text-align: center;
+}
+button{
+    margin-right: 170px;
+    margin-left: -100px;
+    /* margin-top: 20px; */
+    width: 75px;
+    height: 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.grande{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    background-image: url(examen/img/cover-22.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 265px 15px;
+
+}
+.pequenito{
+    display: flex;
+    margin-top: -25px;
+    margin-left: -3px;
+}
+.pequenito div{
+    display: flex;
+    margin: 2px;
+    font-size: 9px;
+    height: 12px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    border-radius: 5px;
+}
+p{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+table{
+    margin-left: -2px;
+    margin-top: 65px;
+    width: 200px;
+}
+table td:nth-child(2n){
+    color: crimson;
+}
+
+.menu{
+    height: 50px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+.menu div{
+   display: flex;
+    width: 90px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+h3{
+    text-align: center;
+    border-bottom: solid crimson;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer div img{
+    margin: 5px;
+    height: 50px;
+    width: 150px;
+}
+footer img{
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 47%;
+}
+.lile{
+    margin-top:5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.lile div{
+    margin: 5px;
+}
+.lile div:nth-child(-n+3){
+color: crimson;
+}

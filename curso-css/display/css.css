@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    background-color: lightcoral;
+    /* con esto podemos convertir elementos de bloque en elementos de linea */
+    /* display: inline; */
+}
+
+.link{
+    background-color: #fff;
+    
+    /* gracias a display :block podemos dar margenes a elemtento de linea para que se comporten como un bloque */
+    /* display: block; */
+
+    /* display: inline-block coje las 2 propiedades */
+
+        display: inline-block;
+        width: 100px;
+        margin-top: 50px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box-1,.box-2{
+    height: 300px;
+    width: 300px;
+border: 1px solid #000;
+}
+.box-1{
+    background-color: red;
+    position: relative;
+    display: block;
+}
+.box-1:hover{
+background-color: blueviolet;
+}
+
+.box-1::after{
+content: "numero 1";
+position: absolute;
+bottom: 5px;
+left: 5px;
+background-color:orangered;
+border:1 pixeles solid #000;
+border-radius: 50px;
+padding: 5px;
+}
+.box-2{
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    z-index: -10;
+}
+
+.oferta{
+
+    background-color: green;
+    padding: 5px;
+    width: 50px;
+    
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    z-index: 5;
+    top: 260px;
+}
+</style>
+
+
+
+</head>
+
+
+<body>
+   <div class="box-1"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestiae ab, error minima aliquid sunt aliquam delectus dicta mollitia vero voluptatum tenetur laboriosam ad ex alias repellat voluptates deserunt nulla.</p> 
+   <div class="oferta"> oferta </div> </div>
+
+</body>
+</html>

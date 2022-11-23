@@ -1,0 +1,41 @@
+*{ 
+    box-sizing: border-box;
+}
+
+body{
+
+    text-align: center;
+    
+
+}
+
+.container{
+    position: relative;
+    background-color: rgba(236, 231, 231, 0.807);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 600px;
+    height: 300px;
+    /* Para esconder el borde pero para trabajar con el */
+    border: hidden;
+    /* para quitar lo que sobra */
+    overflow: hidden;
+    /* Bordear los bordes y poner una sombra */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;;
+}
+
+
+img{
+     width: 600px;
+    height: 200px;
+    
+   
+}
+
+.t1{
+
+    margin-top: 50px;
+
+}

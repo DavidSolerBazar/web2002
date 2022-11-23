@@ -1,0 +1,130 @@
+*{ 
+    box-sizing: border-box;
+}
+
+body{
+    
+    /* Sirve para alinear todo el contenido qu hay en el body hacia el centro */
+   
+    
+}
+
+.contenedor{
+    /* con relative nos podemos mover por donde queramos */
+    position: relative;
+    
+    /* con los margin conseguimos centar la caja principal o para movernos */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* para el alto y el ancho de la caja */
+    width: 600px;
+    height: 600px;
+    
+    /* color de fondo del elemento */
+    background-color: crimson;
+    
+    /* para redondear los bordes */
+    border-radius: 20px;
+    /* para que el vorde sea visible y se hace con SOLID */
+    border: solid crimson ;
+    /* para dar una sombra */
+    box-shadow: 2px 2px 15px 5px black;
+
+    margin-top: 100px;
+
+
+}
+/* segunda etiqueta para poner atributos que sean iguales para todas, en este caso las cajas secundarias */
+.todas{
+    /* Con position ABSOLUTE conseguimos que los elementos se muevan solo dentro del contenedor con RELATIVE en este caso el container     */
+    position: absolute;
+   
+   /* alto y ancho */
+    width: 100px;
+    height: 100px;
+    /* para alinear con todo */
+    text-align: center;
+    
+}
+
+/* para trabajat con todo los textos si tienen los mismos atributos */
+.t{
+   
+    /* separacion entre los elementos en este caso para poder mover el texto */
+    margin-right: auto ;
+    margin-left: auto;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    /* centrar los elementos */
+    text-align: center;
+    
+    
+}
+
+.caja1{
+    background-color: green;
+    /* para poder mover el cuadrado a la parte inferior derecha */
+    right: 0;
+    bottom: 0;
+    /* los margenes para poder separarlo un poco del container */
+    margin-right: 4px;
+    margin-bottom: 4px;
+    
+    border: solid, green;
+    border-bottom-right-radius:10px ;
+}
+
+.caja2{
+    background-color: yellow;
+    /* para poder moverse dentro de la caja como lo quiero en la derecha pongo rigt para que vaya a la derecha */
+    right: 0;
+    /* con los margin puedo separarme del contenedor */
+    margin-right: 4px;
+    margin-top: 4px;
+    /* para que se vea el borde y poder  darle un borde redondeado */
+    border: solid, yellow;
+    /* borde redondeado pero de una esquina solo */
+    border-top-right-radius: 10px ;
+    
+}
+
+.caja3{
+    background-color: blueviolet;
+    bottom: 0;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    border: solid, blueviolet;
+    border-bottom-left-radius:10px ;
+}
+
+.caja4{
+    background-color:black ;
+    left: 0;
+    color: aliceblue;
+    margin-left: 4px;
+    margin-top: 4px;
+    border: solid, black;
+    border-top-left-radius:10px ;
+}
+
+.cajac{
+    background-color: coral;
+    position: absolute;
+    border-radius: 10px;
+   /* nos permite movernos dentro del container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* con margin para poder separarnos de los demas elementos */
+    margin: auto;
+}
+
+h1{
+    /* para poder separarnos un poco de la parte superior del del body */
+    margin-top: 50px;
+    
+}
+    
+

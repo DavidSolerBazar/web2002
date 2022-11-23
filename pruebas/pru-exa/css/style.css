@@ -1,0 +1,37 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@font-face {
+    font-family: "poner cualquier nombre";
+    src: url("poner ruta");}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    top: 0;
+    left: 0;
+    position:fixed;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+header input{
+    position: relative;
+    text-align: center;
+}
+header i{
+    position: absolute;
+    margin-left: 550px;
+}
+
+main{
+    margin-top: 100px;
+}

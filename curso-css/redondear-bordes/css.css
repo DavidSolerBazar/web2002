@@ -1,0 +1,61 @@
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.border{
+    background-color: crimson;
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+/* border-radius es la que se encarga de dar forma a los vordes de 
+nuestra caja incliso capaz de hacerlo redonda tiene diferentes parametros
+para cada uno de los 4 bordes para poder independizarlos
+
+border-top-left-radius - borde superios izquierda
+border-top-right-radius - borde superios derecha
+border-bottom-left-radius - borde inferior izquierda
+border-top-right-radius - borde inferior derecha
+
+*/
+    /* con esta propiedad podemos manejar los bordes como queramos al ser solo border-radius afecta a las cuatro esquinas perp se puede independizar  */
+    
+    border-radius: 200px;
+    /* border-top-left-radius:50px ; 
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 150;
+    border-bottom-right-radius:200px ; */
+    
+
+   
+   
+   
+    /* con esta propiedad le decmos el ancho del borde y solid para que se vea el borde */
+    border: 20px solid;
+    /* con esta propiedad podemos dar al borde un color */
+    border-color: blueviolet;
+}
+
+.outline{
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+
+    /* propiedad que nos permite dibujar un borde por fuera del modelo de caja. NO se puede redondear los bordes ni controlarlos 
+    
+    Tiene la propiedad outline-offset, que nos permite aumentar o disminuir la distancia del ooutline respecto a la caja a la que pertenece
+    */
+
+    outline: 10px inset lightcoral ;
+    outline-offset: 10px ;
+
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid lightgreen ;
+}

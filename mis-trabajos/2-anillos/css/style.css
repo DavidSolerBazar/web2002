@@ -1,0 +1,163 @@
+body{
+    padding: 0;
+    margin: 0%;
+    background-color: rgb(17, 14, 31)
+}
+.todo{
+    height: 2250px;
+    width: 800px;
+    margin-left:auto ;
+    margin-right: auto;
+    background-color: rgba(24, 24, 29, 0.619);
+    
+}
+header{
+    width: 100%;
+    background-color: rgb(28, 28, 31);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 4px blue;
+}
+main{
+    width: 800px;
+}
+
+main img{
+    width: 800px;
+}
+.botones{
+   display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 800px;
+}
+button{
+    width: 820px;
+    height: 45px;
+    margin: 10px;
+    background-color: rgb(64, 60, 60);
+    color: white;
+    border: hidden;
+}
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.p2{
+color: aqua;
+margin-left: -15px;
+font-size: 40px;
+width: 150px;
+}
+.p3{
+    margin-left: 0px;
+    width: 255px;
+}
+.peliculas{
+    display: grid;
+    grid-template-columns: 410px auto;
+    width: 800px;
+}
+.peliculas div{
+    display: flex;
+    flex-direction: column;
+}
+.peliculas img{
+    width: 390px;
+    height: 150px;
+}
+.peliculas img:hover{
+    border-radius: 200px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 4px #0026ff;
+}
+
+
+.peliculas div p{
+    display: flex;
+    justify-content: flex-start;
+}
+.baner{
+    display: flex;
+    width: 800px;
+    height: 207px;
+}
+.baner div{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/watch.jpg);
+    background-repeat: no-repeat;
+    background-size:800px;
+}
+.baner p{
+    margin-left: 480px ;
+    font-size:30px ;
+    width: 200px;
+    color: black;
+}
+nav{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-top: solid blue;
+    border-bottom: solid blue;
+    margin-top: 20px;
+}
+nav a{
+margin-left: 40px;
+text-decoration: none;
+color: white;
+}
+nav a:nth-child(even){
+    border-left: solid blue;
+    border-right: solid blue;
+    padding-left:25px ;
+    padding-right:25px ;
+}
+nav a:last-child{
+margin-right: 60px;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+p{
+    margin-bottom: 14px;
+}
+.imagenes img{
+    margin: 5px;
+    height: 35px;
+}
+.imagenes img:hover:first-child{
+    border-bottom: solid crimson;
+    border-radius: 29px;
+    cursor: pointer;
+}
+.imagenes img:hover:last-child{
+    border-bottom: solid rgb(0, 153, 255);
+    border-radius: 29px;
+    cursor: pointer;
+}
+.imagenes img:hover:nth-child(2n){
+    border-bottom: solid rgb(127, 63, 255);
+    border-radius: 29px;
+    cursor: pointer;
+}

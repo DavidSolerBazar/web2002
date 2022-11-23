@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+   
+body{
+    display: flex;
+    /* alinar horizontal */
+    justify-content: center;
+   /* alinear en vertical */
+    align-items: center;
+    /* para que fnucione la alinacion vertical */
+    height: 100vh;
+}
+.card .img-box img{
+    height: 200px;
+}
+.card::before{
+    content: "NIKE";
+    position: absolute;
+    top: 100px;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-align: center;
+    font-size: 12rem;
+    color: rgba(186, 180, 18,0.3s);
+}
+.card{
+    position: relative;
+    height: 400px;
+    width: 320px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    /* para alinear el texto */
+    text-align: center;
+    /* para que se esconda lo que sobresalga */
+    overflow: hidden;
+}
+
+/* para crear el fondo redondeado */
+.card:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(250px at 80% -20%);
+    
+   
+}
+.card .img-box img{
+   position: absolute;
+   top: 0;
+   left:60px;
+   z-index: 10;
+    width: 220px;
+    margin-top:30px;
+    /* para rotar la imagen */
+    transform: rotate(-20deg);
+}
+.car .size-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .size-box span{
+    display: inline-block;
+    width: 16px;
+    height: 26px;
+    /* para que los numeros esten alineaddos dentro del cuadrado */
+    line-height: 26px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 10px 8px;
+}
+  </style>
+
+</head>
+<body>
+    <article class="card" >
+        <section class="img-box" >
+            <img src="./zapato.png" alt="">
+        </section>
+        <section class="content-box">
+                <h2>NIKE SHOES</h2>
+                <div class="size-box" >
+                    <h3>Size</h3>
+                    <span>42</span>
+                    <span>43</span>
+                    <span>44</span>
+                    <span>45</span>
+                </div>
+                    <div class="color-box" >
+                    <h3>COLOR</h3>
+                    <span class="color-green"></span>
+                    <span class="color-blue"></span>
+                    <span class="color-red"></span>
+                </div>       
+                <button>buy now</button>
+        </section>    
+    </article>
+</body>
+</html>

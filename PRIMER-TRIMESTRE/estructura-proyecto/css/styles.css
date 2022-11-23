@@ -1,0 +1,79 @@
+.box{
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    /* ../ para ir un nivel superior en carpetas para ir  imagenes */
+    background-image: url(../img/paisaje.jpg);
+
+}
+
+table{
+width: 100%;
+}
+
+td{
+   border: 1px  solid black;
+   height: 300px;
+   min-height: 200px;
+   background-color: aquamarine;
+}
+
+
+/* main{
+    display: flex;
+   /* para que rompa los elementos */
+    /* flex-wrap: wrap; */
+    /* en horizontal */
+    /* justify-content: space-between; */
+/* } */ 
+
+
+main{
+    display: grid;
+    /* cada % es una columna para decirle el tamaño */
+    grid-template-columns: 20% 50% 30% ;
+   /* cada % es una filas para decirle el tamaño */
+    grid-template-rows: 20% 40% 40%;
+    gap: 5px;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    /* eje vertical */
+    align-items: center;
+    /* eje horizontal */
+    justify-content: center;
+    
+    height: 100%;
+    
+    background-color: blueviolet;
+}
+
+.b{
+    /* color: black; */
+}
+
+.c{
+    /* height: 300px;
+    width: 300px; */
+}
+
+.d{
+    /* height: 300px;
+    width: 300px; */
+
+}
+
+.f{
+    /* height: 300px;
+    width: 300px; */
+}
+/* seleccionar el ultimo elemento */
+main div:last-child{
+background-color: crimson;
+}
+/* seleccionar el primer elemento */
+main div:first-child{
+    background-color: chartreuse;
+}

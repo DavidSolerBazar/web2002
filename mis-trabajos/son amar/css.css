@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header , .imagenpricipal,.entradas,.imgp3, .imgp2 , .imgp1, footer, nav{
+    border: solid 2px black;
+    margin: 10px;
+}
+
+header{
+    grid-area: caja1;
+    grid-column: 1 / span 4;
+    height: 11vh;
+}
+nav{
+    grid-area: caja8;
+    height: 5vh;
+}
+.imagenpricipal{
+    
+    grid-area: caja2;
+    height: 20vh;
+   
+}
+.entradas{
+    grid-area: caja3;
+    height: 20vh;
+    width: 45vh;
+}
+.imgp3{
+    grid-area: caja4;
+    height: 20vh;
+    width: 43vh;
+}
+.imgp2{
+    grid-area: caja5;
+    height: 20vh;
+    width: 43vh;
+}
+.imgp1{
+    grid-area: caja6;
+    height: 20vh;
+    width: 43vh;
+}
+footer{
+    grid-area: caja7;
+}
+.todogrid{ 
+    display: grid;
+    grid-template-areas: 
+    "caja1 caja1 caja1 caja1"
+    "caja8 caja8 caja8 caja8"
+    "caja2 caja2 caja2 caja3"
+    "caja4 caja5 caja6 caja3"
+    "caja4 caja5 caja6 caja7"
+    ;   
+} 
+
+header{
+    background-color: black;
+    text-align: center;
+}
+header img {
+    height: 70px;
+    width: 70px;
+   
+}
+nav{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: orange;
+    margin:40px;
+    border-right:1px solid black; 
+    padding-right: 60px; 
+    text-align: center;   
+}
+.a4{
+    border: none;
+}
+.imagenpricipal img{
+    height: 22vh;
+    width: 940px
+}
+.imgp1 img{
+    width: 300px;
+    margin-right: 280px;
+}
+.imgp2 img{
+    width: 300px;
+    margin-right: 0px;
+}
+.imgp3 img{
+    width: 300px;
+}
+footer{
+    background-color: black;
+    padding: 40px;
+    margin-right: 40px;
+}
+.imganes img {
+    width: 90px;
+    
+
+}
+
+

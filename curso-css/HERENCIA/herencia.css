@@ -1,0 +1,27 @@
+
+
+/* Para poder heredaar de una clase se tien que poner el parametro que se quire modificar y en su valor poner inherit */
+
+
+/* en este caso el link que hemos puesto dentro del parrafo no hereda el color ROJO del texto que se le a puesto para ello iremos a poner en la class link inherit  */
+.p1{
+    color: red;
+}
+
+/* poner inherit para heredad el color */
+
+.link{
+    color: inherit
+}
+
+/* en ocasiones hereda pero una parte noo queremos heredar y para ello utilizaremos initial  */
+
+.lista{
+    color:blueviolet ;
+}
+
+.objeto1{
+    color:initial;
+    color: green
+    
+}

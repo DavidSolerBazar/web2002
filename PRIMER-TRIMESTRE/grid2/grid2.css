@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+header, .promo1, .promo2, .promo3, .promo4, main, footer{
+    border: 1px solid black;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    grid-area: header;
+}
+.promo1{
+    grid-area: promo1;
+}
+.promo2{
+    grid-area: promo2;
+}
+.promo3{
+    grid-area: promo3;
+}
+.promo4{
+    grid-area: promo4;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.fa-user{
+  display: none;
+}
+.grid-page{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "promo1 promo2 promo3 promo4"
+    "main main main main"
+    "footer footer footer footer";
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 20vh 15vh 50vh 15vh;
+    gap:1rem;
+}
+@media( max-width:500px){
+
+    .promo3,.promo4{
+        display: none;
+    }
+    
+    .grid-page{
+    display: grid;
+    grid-template-areas:
+    "header header "
+    "promo1 promo2 "
+    "main main "
+    "footer footer " ;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20vh 15vh 50vh 15vh;
+    gap:1rem;
+}
+.promo1, .promo2{
+    background-color: blueviolet;
+    transition: all 0.8s;
+}
+.fa-user{
+    display: inline-block;  
+    margin-right: 20px;
+}
+}

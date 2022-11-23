@@ -1,0 +1,154 @@
+
+
+
+/* Gracias a position nos permite posicionar los elementos 
+
+flujo de renderizado los elementos se dibujan de izquierda  a derecha y de arriba  abajo. El punto 0,0 de los elelmento, por norma general, es l esquina superior izquierda.
+
+espacio reservado : elemento asignado por el navegador 
+
+elemento posicionado : Esto significa que el elemento tiene la propiedad position con un valor distinto de "static", que es el valor que tiene esta propiedad por defecto
+
+Stacking contex : contexto de ailamineto es el oreden en el que se apilaran las cajas que se superponen dentro del mismo contenedor.
+
+Al posicionar un elementor se habilitan 5 propiedads que podemos utilizar para mover esos elementos en esos 3 ejes.
+
+top -- el elemento se movere desde la parte superior la distancia que le hayamos indicado
+
+right -- el elemento se movere desde la parte derecha la distancia que le hayamos indicado
+
+bottom -- el elemento se movere desde la parte inferior la distancia que le hayamos indicado
+
+left -- el elemento se movere desde la parte superior la distancia que le hayamos indicado
+
+z-index -- seria la profundidad de los elementos osea si hay 2 quien se estaria delante o atras
+
+NOTA : Si a un elemento le declaramos la propiedad to o left lasa propiedades bottom o rigt no funcionaran
+
+LOS POSIBLES VALORES QUE LE PODEMAS DAR A UN ELEMENTO
+
+Static -- Es el valor por defecto que tiene un elemento , con este valor el elemento NO ESTA POSICIONADO y por lo cual no podremos moverlo
+
+Relativ -- El elemento mantendra su posicion y medidas en el fluja de renderizada y mantendra su espacio reservado Si lo movemos lo hara usando su posicion en html como punto de referencia.
+
+Absolute -- El elemento perdera sus medidass y su espacio reservdo. Si lo movemos usara el lelemento padre posicionado como referencia. Si no tienen ninguno, usara el elemento html de referencia.
+
+Fixed -- El elemento perdera sus medidas y espacio reservado.
+si lo movemos usara el elemento html de referencia y ademas se quedara fijo en esa posicion aunque hagamos scroll
+
+Sticky -- Es una mezcla de position y relative y fixed. Con este tipo de posicionamineto los valores top, left, bottom y raight no sirven para mover el elemento, si n opara indicare en que punto pasara a tener un comportamineto de posicion fixed, hasta llegar a ese punto se comportara como si tuviera relative
+*/
+
+
+*{ 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    }
+
+    .box1{
+        background-color: lightcoral;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .box2{
+        background-color: lightgreen;
+        /* position-relative nos podemos mover libremente */
+        position: relative;
+        margin-left: auto;
+        
+    }
+
+/* posicion con absolute se quita lo posicion que tienen los elementos y se mueven por su contenedor  y ademas si se lo damos  aun link que solo es de linea se convertura en un bloque  */
+    .caja{
+        width: 100px;
+        height: 200px;
+    }
+
+    .caja1{
+        background-color: blue;
+        /* al estar en obslute solo se va a poder mover dentro del cuadrado de color coral */
+        position: absolute;
+        left: 100px;
+        text-align: center ;
+        
+    }
+
+    .caja2{
+        
+        /* esta caja como esta dentro del body coje de referencia el body y se mueve por el */
+        background-color: blueviolet;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Gracias a position relative si tenemos otro div dentro del otro div si uno de ellos tiene relative en este caso la clase contenedor y el cuadrado de dentro absolute el cuadrdado de dentro siempre cojera para moverse dentro del container */
+
+
+    .contenedor, .contenedor1{
+        background-color: coral;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    .texto{
+        background-color: crimson;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        
+    }
+
+
+    .cuadrado1, .cuadrado2,.cuadrado3 {
+
+        width: 100px;
+        height: 100px;
+        position: relative;
+
+    }
+
+/* en este caso el cuadrado verde esta por encima del marron por como esta escrito el codigo html ya que el cuadraado 2 esta el ultimo en la linea de codigo pero para poder cambiar posiciones se utiliza z-index */
+    .cuadrado1{
+    background-color: brown;
+    color: white;
+   /* Con esto conseguimos que el marron vaya delante del verde */
+    z-index: 1;
+}
+
+.cuadrado2{
+
+    background-color: chartreuse;
+    bottom: 80px;
+}
+
+/* z-index al con el contenedor padre no funciona para que el hijo vya detras para ello hay que ir al cuadrado hijo para que este se quede detras y el padre delante con un z-indexnegativo */
+.contenedor1{
+    /* z-index aqui no funciona */
+    right: 250px;
+    bottom: 590px
+}
+
+.cuadrado3{
+    text-align: right;
+    position: absolute;
+    background-color: aquamarine;
+    left: 150px;
+   width: 180px;
+    /* asi se consigue que el padre este delante del hijo */
+    z-index: -1;
+}

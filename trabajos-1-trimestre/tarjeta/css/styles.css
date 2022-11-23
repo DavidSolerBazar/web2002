@@ -1,0 +1,115 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+:root{
+    --colorfondo: black;
+   --colortexto: white;
+}
+
+body{
+    background-color: var(--colorfondo) ;
+}
+
+.carta{
+    position:abso;
+    background:url(/trabajos-1-trimestre/tarjeta/img/logo.png) scroll 700px 100px ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    /* 0 horinzotal 320 vertical */
+    background-position: 0px 320px;
+    /* para moverlo tamnien en pixeles 1 en horizontal y 2 en vertical */
+    background-size: contain;
+color: white;
+height: 550px;
+width: 350px;
+border-radius: 5px;
+box-shadow: 2px 2px 15px 5px blueviolet;
+margin-left: auto;
+margin-right: auto;
+}
+
+.portada{
+    
+background: linear-gradient(0deg, rgba(62, 3, 113, 0.582) 0%, rgba(26,127,148,0.12694877505567925) 44%, rgba(16,16,83,0) 100%), url(/trabajos-1-trimestre/tarjeta/img/buena.png);
+background-size: cover;
+height: 60%;
+border-top-left-radius: 5px;
+position: relative;
+border-top-right-radius: 5px;
+
+}
+
+.portada h2{
+    text-align: center;
+    padding-top: 75%;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px blueviolet;
+}
+
+.portada .serie-top{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(71, 0, 170, 0.541);
+    text-align: center;
+    padding-top: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 73%, 0 100%);
+    
+    
+}
+
+.portada::after{
+    content:"disney +" ;
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    z-index: 5;
+    background-color: rgba(71, 0, 170, 0.541);
+    width: 55px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.panel{
+    text-align: center;
+    margin-top: 50%;
+    margin-right: 12px;
+    padding: 8px, 10px;
+}
+
+.fa-solid, .panel .fa-video{
+color: blueviolet;
+height: 5px;
+margin-right: 5px;
+text-align: center;
+
+}
+
+ button:hover{
+
+    background-color: black;
+    transform: scale(1.2 , 1.2);
+    cursor: pointer ; 
+    transition: transform 0,5s ease;
+    color: yellow;
+    border-color: yellow;
+ 
+}
+
+button{
+    border-radius: 5px;
+    border-color :rgb(106, 0, 255);
+    margin-left: 22px;
+    margin-top: 15px; 
+}
+
+
+
+
+
+    
+
+

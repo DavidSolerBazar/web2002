@@ -1,0 +1,13 @@
+/* SELECTORES COMPUESTOS
+    Agrupados
+    Combinadores
+
+*/
+
+/* para agrupar diferentes clases se pone una clase y luego , y la siguiente clase para todas aqueyas que queramos y asi todo quedara igual*/
+
+/* Agrupados */
+.p1, .p2, .p3, .p4 {
+    background-color: red;
+}
+    

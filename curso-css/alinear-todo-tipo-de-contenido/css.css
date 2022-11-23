@@ -1,0 +1,56 @@
+
+/* text-aling sire solo para centrar elemetos de caja dentro de una caja */
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #333;
+    color:#fff ;
+}
+
+.text{
+/* alinear el texto */
+    text-align: center;
+}
+
+.box{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border: 2px solid lightcoral;
+    /* para alinear el texto dentro de la caja */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+   background-color: blueviolet;
+    color: #fff;
+
+    /* al darle un width se pierde el centrado y se lo tendriamos que dar con margin-left y margin-raight */
+    
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+    
+    
+    /* al ser un elemento de linea con text-aling no se centraria por si solo para ello tambien vamos a necesita display block */
+display: block;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+.img{
+/* para centrar una imagen hay que poner display:block para que luego se puede centrar como siempre con lo margin en auto, siempre y cuando no este dentro de una caja */
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+height: 400px;
+}

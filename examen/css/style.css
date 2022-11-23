@@ -1,0 +1,118 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@font-face {
+    font-family: "nombre que se quiera";
+    src: url(directorio de la fuente);}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(51, 51, 75);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+button{
+    margin-right: 30px;
+}
+
+
+
+.contenido{
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    background-image:  url(/examen/img/cover-22.png) ;
+    background-size: 75%;
+    background-position: 200px -50px;
+}
+.datos{
+    display: flex;
+    justify-content: left;
+    margin-left: -px;
+}
+.datos div{
+    display: flex;
+    background-color: rgb(51, 51, 75);
+    height: 20px;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    font-size: 10px;
+}
+.opciones{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    width: 400px;
+}
+td{
+    color: blue;
+}
+h1{
+    color: white;
+}
+p{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 150px;
+    color: white;
+}
+table{
+    margin-top: 150px;
+    color: white
+}
+
+.caratulas{
+    margin-top: 100px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-left: 350px;
+   
+   
+}
+.caratulas, img{
+    height: 100px;
+}
+.opciones  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 51, 75);
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+    color: white;
+    margin: 5px;
+    font-size: 10px;
+
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-bottom: solid;
+}

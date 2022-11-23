@@ -1,0 +1,24 @@
+.container div{
+    border: 1px solid black;
+    height: 4rem;
+    width: 4rem;
+    background-color: antiquewhite;
+    line-height: 4rem; /*para centrar en vertical el texto y tiene que ser igual que la altura en este caso 4rem */
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    background-color: beige;
+    display: flex;
+    justify-content: space-around; /*para centrar en horizontal*/
+    align-items: center; /*para centrar en vertical*/
+    flex-direction: ; /*ordenaa la direccion */
+}
+.container div:nth-child(){
+    background-color: crimson;
+}
+
+/* nth-child() sirve para selecionar el hijo en el parentesis pondrmos la posicion del hijo a modificar */
+
+/* nth--child(even) */
+/* nth-child(odd) para los hijos impares */

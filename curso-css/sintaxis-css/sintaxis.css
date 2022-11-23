@@ -1,0 +1,22 @@
+
+
+
+/* tipos de sintaxis del css
+
+Selector : el elemento quevamos a aplicar estilos
+
+propiedad : lo que vamos a cambiar
+
+valor : El nuevo valor que le vamos dar a la 
+
+propiedad + valor Se le domina declaracion
+
+y todo el conjunto de le denomina regla
+
+*/
+
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+}

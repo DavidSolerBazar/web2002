@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/background.png);
+}
+header{
+    display: flex;
+    align-items: center;
+
+}
+header img{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+header nav{
+    display: flex;
+    margin-left: 90px;
+}
+header div{
+    margin: 20px;
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration:  underline blueviolet;
+    text-shadow: 2px 3px 5px red;
+}
+.carrito{
+    width: 100px;
+    height: 100px;
+    margin-left:300px ;
+    align-content: center;
+    margin-top: -30px;
+}
+
+.carrito img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.redes{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -80px;
+    transform: rotate(-90deg);
+}
+
+main div a{
+    margin:25px;
+}
+
+button{
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(45deg, rgba(0,212,255,1) 31%, rgba(236,6,191,1) 65%);
+    color: white;
+    margin-left: 450px;
+    margin-top: 300px;
+}

@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+/* Cmo funciona CSS
+
+especificidad : Establece como de especifico es un selector para saber que estilo saplicar.
+El calculo se realiza con la siguiente formula:
+
+    etiquetas y pseudoelementos 001
+    clases, atributos y pseudoclases 010
+    ids 100
+    estilo en linea 1000
+
+CASCADA
+HERENCIA
+
+*/
+
+/* selector de etiqueta <h1></h1> */
+
+h1{
+    background-color: red;
+}
+
+/* selector de clase class="h1"      UTILIZAR SIEMPRE ESTE */
+
+.h1{
+    background-color: aqua;
+}
+
+/* selector por ID id="h1" */
+
+#h1{
+    background-color: chartreuse;
+}
+
+/* selector de etiqueta + ID   <h1></h1> + id="h1" */
+
+h1#h1{
+    background-color: dimgray;
+}
+
+/* selector de etiqueta + clase + id     <h1></h1> + class="h1" + id="h1"  */
+
+h1.h1#h1{
+    background-color:violet ;
+}
+
+/* SIEMPRE SE TIENE QUE UTILIZAR CLASES osea class */
+
+
+ 
